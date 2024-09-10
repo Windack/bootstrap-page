@@ -7,14 +7,59 @@
         <title>bootstrap-page</title>
         
         <link href="scss/bootstrap-custom.css" rel="stylesheet">
+		<link href="fonts/satoshi.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
 
     <body>
-        
-        <div class="container">
-            <h1 class="text-primary text-center p-5">Lorem ipsum.</h1>
-        </div>
+		
+		<nav class="navbar fixed-top navbar-expand-md px-2">
+			<div class="container-fluid d-flex">
+				<a class="navbar-brand navbar-logo" href="#"><span>BootstrapPage</span></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+      				<span class="navbar-toggler-icon"></span>
+    			</button>
+				<div class="navbar-collapse collapse" id="navbarMain">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link">Placeholder</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Placeholder</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Placeholder</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<main class="pt-1">
+			
+			<div class="container-xxl">
+				<div class="row gx-2 overflow-hidden">
+					<div class="col-md">
+						<img src="images/img3.jpg" class="img-fluid rounded-2" alt>
+					</div>
+					<div class="col-md rounded-2">
+						<img src="images/img1.jpg" class="img-fluid rounded-2" alt>
+					</div>
+				</div>
+				<div class="row gx-2 pt-2 overflow-hidden">
+					<div class="col-md">
+						<img src="images/img4.jpg" class="img-fluid rounded-2" alt>
+					</div>
+					<div class="col-md">
+						<img src="images/img2.jpg" class="img-fluid rounded-2" alt>
+					</div>
+					<div class="col-md">
+						<img src="images/img1.jpg" class="img-fluid rounded-2" alt>
+					</div>
+				</div>
+			</div>
+		
+		</main>
         
         
         <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
