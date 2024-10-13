@@ -1,3 +1,8 @@
+h2 {
+	font-size: 48px;
+	font-weight: 500;
+}
+
 .navbar-logo {
 	background-color: var(--bs-body-color);
 	-webkit-mask-image: url("../images/logo.svg");
@@ -31,4 +36,67 @@
 
 .nav-item:not(:last-of-type) {
 	margin-right: 0.5em;
+}
+
+.navbar {
+	transition: 0.3s background;
+}
+
+.navbar:has(.navbar-collapse.show) {
+	background: var(--bs-body-bg);
+}
+
+.element-nr {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 33px;
+	width: 33px;
+	background: #ffffff;
+	color: var(--bs-body-bg);
+}
+
+.code-example {
+	border: 1px solid #ffffff50;
+	padding: 2em;
+	border-radius: 5px;
+	font-size: 14px;
+	font-family: var(--bs-font-monospace);
+}
+
+.sidebar p {
+	opacity: 50%;
+	font-style: italic;
+}
+
+.hero-col {
+	height: 300px;
+}
+
+.hero-img-left {
+	height: 100%;
+	width: auto;
+}
+
+@media only screen and (max-width: 991px) {
+	.hero-img-left {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.hero-col {
+		height: 600px;
+	}
+	.hero-right {
+		height: 300px;
+	}
+}
+
+.example .col, .example .col-8, .example .col-4 {
+	border: 1px solid #ffffff;
+	padding: 1em;
+	text-align: center;
+	border-radius: 5px;
 }

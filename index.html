@@ -11,10 +11,10 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body data-bs-theme="dark">
 		
-		<nav class="navbar fixed-top navbar-expand-md px-2">
-			<div class="container-fluid d-flex">
+		<nav class="navbar fixed-top navbar-expand-md py-3">
+			<div class="container-xxl d-flex">
 				<a class="navbar-brand navbar-logo" href="#"><span>BootstrapPage</span></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
       				<span class="navbar-toggler-icon"></span>
@@ -22,67 +22,288 @@
 				<div class="navbar-collapse collapse" id="navbarMain">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="subpage1.html">Subpage 1</a>
+							<a class="nav-link" href="#container">Container</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link">Placeholder</a>
+							<a class="nav-link" href="#possibilities">Possibilities</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link">Placeholder</a>
+							<a class="nav-link" href="#row">Row</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#column">Column</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 		
-		<main class="pt-1">
+		<main class="" style="padding-top: 80px;">
 			
-			<div class="container-xxl">
-				<div class="row gx-2 overflow-hidden">
-					<div class="col-md">
-						<img src="images/img3.jpg" class="img-fluid rounded-2" alt>
+			<div class="container-xxl hero">
+				<div class="row overflow-hidden g-2">
+					<div class="col-lg order-2 order-lg-1 hero-col">
+						<img src="images/img1.jpg" class="img-fluid object-fit-cover hero-img-left" alt>
 					</div>
-					<div class="col-md rounded-2 d-none d-md-block">
-						<img src="images/img1.jpg" class="img-fluid rounded-2" alt>
-					</div>
-				</div>
-				<div class="row gx-2 pt-2 overflow-hidden d-none d-md-flex">
-					<div class="col-md">
-						<img src="images/img4.jpg" class="img-fluid rounded-2" alt>
-					</div>
-					<div class="col-md">
-						<img src="images/img2.jpg" class="img-fluid rounded-2" alt>
-					</div>
-					<div class="col-md">
-						<img src="images/img1.jpg" class="img-fluid rounded-2" alt>
+					<div class="col-lg order-1 order-lg-2 d-flex flex-column g-2 overflow-hidden hero-col">
+						<div class="col d-flex hero-right">
+							<div class="mt-auto">
+								<h2 style="font-size: 92px; line-height: 85%;" class="mb-3">Bootstrap5 Grid-System</h2>
+								<p style="font-size: 14px;">Bootstrap's grid system is a flexible layout mechanism that uses a series of containers, rows, and columns to create responsive designs. It’s based on a 12-column layout, allowing you to define how many columns an element should span at various screen sizes (e.g., extra small, small, medium, large).</p>
+							</div>
+						</div>
+						<div class="col d-none d-lg-block hero-right">
+							<img src="images/img6.jpg" class="img-fluid" alt>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="container mt-5">
-				<h1>Welcome to My Website</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tincidunt arcu. Suspendisse potenti. Duis
-					vehicula, dui et vulputate volutpat, libero augue laoreet nunc, id sollicitudin est lacus eu libero. In
-					hac habitasse platea dictumst.</p>
-		
-				<h2>About Us</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed
-					sollicitudin, nunc non varius venenatis, libero massa cursus augue, at feugiat lorem metus a arcu.</p>
-		
-				<h2>Our Services</h2>
-				<ul>
-					<li>Lorem ipsum dolor sit amet</li>
-					<li>Consectetur adipiscing elit</li>
-					<li>Vestibulum at eros</li>
-					<li>Praesent id massa</li>
-				</ul>
-		
-				<h2>Contact Us</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in nisl nec justo convallis suscipit. Ut
-					sollicitudin elit ut nulla egestas, ac tempor odio scelerisque.</p>
+			<div class="container-xxl elements">
+				<div class="py-4">
+					<h2>Main Elements of the System</h2>
+				</div>
+
+				<div class="row g-2 row-cols-2 row-cols-md-4 elements-box">
+
+					<div class="col element">
+						<div class="p-3 h-100 border border-white">
+							<div class="element-nr">1</div>
+							<div class="pt-4">
+								<h4>Container</h4>
+								<p>This is the outermost element that wraps the grid system. It can be either a fixed-width container (.container) or a full-width container (.container-fluid).</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col element">
+						<div class="p-3 h-100 border border-white">
+							<div class="element-nr">2</div>
+							<div class="pt-4">
+								<h4>Row</h4>
+								<p>Rows are used to create horizontal groups of columns. They ensure that columns are properly aligned and have negative margins to offset the padding of the columns.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col element">
+						<div class="p-3 h-100 border border-white">
+							<div class="element-nr">3</div>
+							<div class="pt-4">
+								<h4>Column</h4>
+								<p>Columns are the building blocks of the grid. You can define their widths using classes like .col, .col-sm-6, .col-md-4, etc., allowing you to specify how many of the 12 available columns each element should span at different screen sizes.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col element">
+						<div class="p-3 h-100 border border-white">
+							<div class="element-nr">4</div>
+							<div class="pt-4">
+								<h4>Breakpoints</h4>
+								<p>Bootstrap uses predefined breakpoints (extra small, small, medium, large, and extra large) to control the responsive behaviour of columns. This allows for different column arrangements depending on the device's width.</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container-xxl" id="container">
+				<div class="py-5">
+					<h2>Container <i style="font-weight: 300;">*.container*</i></h2>
+				</div>
+
+				<div class="row g-5 mb-5">
+					<div class="col">
+						<p>Is the basic element in Bootstrap and is required when creating a grid system. Containers center the content on the website and add padding against the edge of the website. Containers can have different widths - the following table is taken directly from the Bootstrap documentation. The addition of sm, md, lg etc. can also be added to other elements in the grid system.</p>
+					</div>
+					<div class="col-3 sidebar mh-100 border-start d-none d-md-block">
+						<p>Summary</p>
+					</div>
+				</div>
+
+				<div class="row g-5 mb-5">
+					<div class="col">
+						<h3>Types of Containers</h3>
+						<div class="mb-4">
+							<div class="pt-3">
+								<h5>Default Container</h5>
+								<p>The default .container class is a responsive, fixed-width container, meaning its max-width changes at each breakpoint.</p>
+							</div>
+							<div class="code-example font-monospace">
+								&lt;div class="container"&gt;max-width at each breakpoint &lt;/div&gt;
+							</div>
+						</div>
+
+						<div class="mb-4">
+							<div class="pt-3">
+								<h5>Fixed-Width Container</h5>
+								<p>Provides a responsive fixed width at various breakpoints. The width of the container changes based on the screen size but does not stretch to fill the entire width of the viewport.</p>
+							</div>
+							<div class="code-example font-monospace">
+								&lt;div class="container-sm"&gt;100% wide until small breakpoint&lt;/div&gt;<br>
+								&lt;div class="container-md"&gt;100% wide until medium breakpoint&lt;/div&gt;<br>
+								&lt;div class="container-lg"&gt;100% wide until large breakpoint&lt;/div&gt;<br>
+								&lt;div class="container-xl"&gt;100% wide until extra large breakpoint&lt;/div&gt;<br>
+								&lt;div class="container-xxl"&gt;100% wide until extra extra large breakpoint&lt;/div&gt;
+							</div>
+						</div>
+
+						<div class="">
+							<div class="pt-3">
+								<h5>Full-Width Container</h5>
+								<p>This container spans the entire width of the viewport, making it responsive to the screen size without any fixed width constraints.</p>
+							</div>
+							<div class="code-example font-monospace">
+								&lt;div class="container-fluid"&gt; ... &lt;/div&gt;
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-3 sidebar mh-100 border-start d-none d-md-block">
+						<p>Types of Containers</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="container-xxl mb-5" id="possibilities">
+				<div>
+					<h2 class="mb-0" style="font-size: 72px;">Endless possibilities</h2>
+					<p>This system enables developers to create organized, responsive web layouts that adjust seamlessly to different devices.</p>
+				</div>
+				<div class="row g-2">
+					<div class="col-md-6">
+						<div class="row row-cols-2 g-2">
+							<div class="col"><img src="images/img2.jpg" class="img-fluid"></div>
+							<div class="col"><img src="images/img4.jpg" class="img-fluid"></div>
+							<div class="col"><img src="images/img3.jpg" class="img-fluid"></div>
+							<div class="col"><img src="images/img6.jpg" class="img-fluid"></div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="row g-2" style="height: 100%;">
+							<div class="col" style="height: 100%; width: auto;">
+								<div><img src="images/img5.jpg" class="img-fluid object-fit-cover"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<div class="container-fluid pb-2" style="background-color: #dee2e6; color: #0B0A0C;" id="row">
+				<div class="container-xxl" id="container">
+					<div class="py-5">
+						<h2>Row <i style="font-weight: 300;">*.row*</i></h2>
+					</div>
+
+					<div class="row g-5 mb-5">
+						<div class="col">
+							<p>Its the wrapper for a grid row and divides the column into 12 parts. Horizontal padding is also added (gutter) so that the spacing between the rows remains even.</p>
+						</div>
+						<div class="col-3 sidebar mh-100 border-start d-none d-md-block" style="border-color: #0B0A0C50 !important;">
+							<p>Summary</p>
+						</div>
+					</div>
+	
+					<div class="row g-5 mb-5">
+						<div class="col">
+							<div>
+								<h5>.row-cols-*</h5>
+								<p>Creates a layout system according to which all subsequent columns are based. For example, a 50/50 layout can be created with '.row-cols-2' without editing the columns individually.</p>
+							</div>
+							<div class="code-example font-monospace" style="border-color: #0B0A0C50;">
+								&lt;div class="row row-cols-2"&gt; ... &lt;/div&gt;
+							</div>
+						</div>
+						
+						<div class="col-3 sidebar mh-100 border-start d-none d-md-block" style="border-color: #0B0A0C50 !important;">
+							<p>.row-cols-*</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container-xxl" id="column">
+				<div class="py-5">
+					<h2>Column <i style="font-weight: 300;">*.col*</i></h2>
+				</div>
+
+				<div class="row g-5 mb-5">
+					<div class="col">
+						<p>Is actually a single cell for the grid system. This means that every cell in the system needs at least one '.col' class - but it is also very flexible, as each cell can be given a size.</p>
+						<p>Since a row is divided into 12 parts, the '.col' class can be given a maximum size of 12, this would mean a complete width of the cell (.col-12) - the minimum size would therefore be 1, and would mean a twelfth (8.33%) (.col-1). This element can also be limited to certain viewport sizes (e.g. .*col-md-3*, would be a width of 25% up to the viewport width 'md').</p>
+					</div>
+					<div class="col-3 sidebar mh-100 border-start d-none d-md-block">
+						<p>Summary</p>
+					</div>
+				</div>
+
+				<div class="row g-5 mb-5">
+					<div class="col">
+						<h3>Examples</h3>
+						<div class="mb-3">
+							<div class="pt-3">
+								<h5>Example 1</h5>
+								<p>Boostrap, without any modifications, automatically divides the elements to the container width. In this example it gives the .col elements a width of 25%.</p>
+							</div>
+							<div class="example px-2 mb-3">
+								<div class="row g-3">
+									<div class="col">col</div>
+									<div class="col">col</div>
+									<div class="col">col</div>
+									<div class="col">col</div>
+								</div>
+							</div>
+							<div class="code-example font-monospace">
+								&lt;div class="container"&gt;<br>
+								&nbsp;&lt;div class="row"&gt;<br>
+								&nbsp;&nbsp;&lt;div class="col"&gt;col&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class="col"&gt;col&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class="col"&gt;col&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class="col"&gt;col&lt;/div&gt;<br>
+								&nbsp;&lt;/div&gt;<br>
+								&lt;/div&gt;
+							</div>
+
+							<div class="pt-3">
+								<h5>Example 2</h5>
+								<p>Here the row is divided into two, but thanks to the responsive classes bootstrap gives the first element a width of 8/12 (66%) and the 2nd element a width of 4/12 (33%).</p>
+							</div>
+							<div class="example  mb-3">
+								<div class="row g-0">
+									<div class="col-8">col-8</div>
+									<div class="col-4">col-4</div>
+								  </div>
+							</div>
+							<div class="code-example font-monospace">
+								&lt;div class="container"&gt;<br>
+								&nbsp;&lt;div class="row"&gt;<br>
+								&nbsp;&nbsp;&lt;div class="col-8"&gt;col-8&lt;/div&gt;<br>
+								&nbsp;&nbsp;&lt;div class="col-4"&gt;col-4&lt;/div&gt;<br>
+								&nbsp;&lt;/div&gt;<br>
+								&lt;/div&gt;<br>
+							</div>
+						</div>
+
+					</div>
+					
+					<div class="col-3 sidebar mh-100 border-start d-none d-md-block">
+						<p>Column Examples</p>
+					</div>
+				</div>
+
 			</div>
 		
 		</main>
+
+		<footer class="p-5" style="border-top: 1px solid #ffffff50;">
+			<p class="m-0" style="text-align: center; font-style: italic;">Thats it. Thanks &#9825;</p>
+		</footer>
         
         
         <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>

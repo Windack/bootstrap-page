@@ -1,15 +1,15 @@
 // custom variables
 
 // Base stuff
-$primary: #6F00FF;
-$body-color: #010B13;
+$primary: #0B0A0C;
+$body-color: #ffffff;
 $font-family-base: 'Satoshi', sans-serif;
+$body-bg-dark: #0B0A0C;
 
 //navbar
 $nav-link-font-weight: 600;
 
 // grid stuff
-$grid-gutter-width: 0.75rem;
 
 // bootstrap import
 @import "../bootstrap/scss/bootstrap";
