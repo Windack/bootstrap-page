@@ -23,8 +23,6 @@ h2 {
 	aspect-ratio: 1;
 }
 
-/*var(--bs-body-color) */
-
 .navbar-logo {
 	background-color: var(--bs-body-color);
 	-webkit-mask-image: url("../images/logo.svg");
