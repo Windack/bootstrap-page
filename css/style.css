@@ -1,7 +1,29 @@
 h2 {
-	font-size: 48px;
+	font-size: 3.25em;
+	line-height: 85%;
 	font-weight: 500;
 }
+
+.hero-title {
+	font-size: 5.75em
+}
+
+.bootstrap-logo {
+	background-color: var(--bs-body-color);
+	-webkit-mask-image: url("../images/bootstrap-logo.svg");
+	mask-image: url("../images/bootstrap-logo.svg");
+	-webkit-mask-position: center;
+	mask-position: center;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	display: block;
+	width: 3em;
+	aspect-ratio: 1;
+}
+
+/*var(--bs-body-color) */
 
 .navbar-logo {
 	background-color: var(--bs-body-color);
@@ -70,7 +92,7 @@ h2 {
 }
 
 .hero-col {
-	height: 300px;
+	height: 100%;
 }
 
 .hero-img-left {
@@ -86,15 +108,28 @@ h2 {
 }
 
 @media only screen and (min-width: 992px) {
-	.hero-col {
-		height: 600px;
-	}
-	.hero-right {
+	.hero-sub-col {
 		height: 300px;
+	}
+
+	.hero-row {
+		height: 600px;
 	}
 }
 
-.example .col, .example .col-8, .example .col-4 {
+@media only screen and (max-width: 575px) {
+	.hero-title {
+		font-size: 3.5em;
+	}
+
+	h2 {
+		font-size: 2.5em;
+		line-height: 85%;
+		font-weight: 500;
+	}
+}
+
+.example .col, .example .col-8, .example .col-4, .example .col-6 {
 	border: 1px solid #ffffff;
 	padding: 1em;
 	text-align: center;
