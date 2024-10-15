@@ -2,6 +2,12 @@ h2 {
 	font-size: 3.25em;
 	line-height: 85%;
 	font-weight: 500;
+	letter-spacing: -1px;
+	margin-left: -0.075em;
+}
+
+img {
+	filter: saturate(95%) hue-rotate(-10deg);
 }
 
 .hero-title {
@@ -34,7 +40,8 @@ h2 {
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
 	display: block;
-	width: 12.5em;
+	width: 9.375em;
+	margin-left: -0.075em;
 }
 
 .navbar-logo > span {
@@ -58,11 +65,11 @@ h2 {
 	margin-right: 0.5em;
 }
 
-.navbar {
-	transition: 0.3s background;
+.navbar > .container-xxl {
+	transition: 0.5s background;
 }
 
-.navbar:has(.navbar-collapse.show) {
+.navbar:has(.navbar-collapse.show) > .container-xxl, .navbar:has(.navbar-collapse.collabsing) > .container-xxl {
 	background: var(--bs-body-bg);
 }
 

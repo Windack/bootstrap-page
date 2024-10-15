@@ -1,24 +1,22 @@
 <!doctype html>
 <html>
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>bootstrap-page-5</title>
-        
-        <link href="scss/bootstrap-custom.css" rel="stylesheet">
+  
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>bootstrap-page-5</title>
+		
+		<link href="scss/bootstrap-custom.css" rel="stylesheet">
 		<link href="fonts/satoshi.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+		<link href="css/style.css" rel="stylesheet">
+	</head>
 
-    <body class="" data-bs-theme="dark">
+  <body class="" data-bs-theme="dark">
 		
 		<nav class="navbar fixed-top navbar-expand-md py-3">
 			<div class="container-xxl d-flex">
 				<a class="navbar-brand navbar-logo" href="#"><span>BootstrapPage</span></a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-      				<span class="navbar-toggler-icon"></span>
-    			</button>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 				<div class="navbar-collapse collapse" id="navbarMain">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item">
@@ -67,7 +65,7 @@
 					<div class="col-lg order-1 order-lg-2 d-flex flex-column overflow-hidden hero-col">
 						<div class="col d-flex hero-sub-col">
 							<div class="mt-lg-auto">
-								<h2 class="mb-3 hero-title" style="line-height: 85%;">Bootstrap 5<br>Grid-System</h2>
+								<h2 class="mb-3 hero-title" style="line-height: 85%; margin-left: 0px;">Bootstrap 5<br>Grid-System</h2>
 								<p class="mb-1" style="font-size: 0.875em;">Bootstrap's grid system is a flexible layout mechanism that uses a series of containers, rows, and columns to create responsive designs. It’s based on a 12-column layout, allowing you to define how many columns an element should span at various screen sizes (e.g., extra small, small, medium, large).</p>
 							</div>
 						</div>
@@ -79,8 +77,8 @@
 			</div>
 
 			<div class="container-xxl elements">
-				<div class="py-4">
-					<h2>Main Elements of the System</h2>
+				<div class="py-5">
+					<h2 class="mb-1">Main Elements of the System</h2>
 				</div>
 
 				<div class="row g-2 row-cols-1 row-cols-sm-2 row-cols-md-4 elements-box">
@@ -90,7 +88,7 @@
 							<div class="element-nr">1</div>
 							<div class="pt-4">
 								<h4>Container</h4>
-								<p>This is the outermost element that wraps the grid system. It can be either a fixed-width container (.container) or a full-width container (.container-fluid).</p>
+								<p style="font-size: 0.875em;">This is the outermost element that wraps the grid system. It can be either a fixed-width container (.container) or a full-width container (.container-fluid).</p>
 							</div>
 						</div>
 					</div>
@@ -100,7 +98,7 @@
 							<div class="element-nr">2</div>
 							<div class="pt-4">
 								<h4>Row</h4>
-								<p>Rows are used to create horizontal groups of columns. They ensure that columns are properly aligned and have negative margins to offset the padding of the columns.</p>
+								<p style="font-size: 0.875em;">Rows are used to create horizontal groups of columns. They ensure that columns are properly aligned and have negative margins to offset the padding of the columns.</p>
 							</div>
 						</div>
 					</div>
@@ -110,7 +108,7 @@
 							<div class="element-nr">3</div>
 							<div class="pt-4">
 								<h4>Column</h4>
-								<p>Columns are the building blocks of the grid. You can define their widths using classes like .col, .col-sm-6, .col-md-4, etc., allowing you to specify how many of the 12 available columns each element should span at different screen sizes.</p>
+								<p style="font-size: 0.875em;">Columns are the building blocks of the grid. You can define their widths using classes like .col, .col-sm-6, .col-md-4, etc., allowing you to specify how many of the 12 available columns each element should span at different screen sizes.</p>
 							</div>
 						</div>
 					</div>
@@ -120,12 +118,12 @@
 							<div class="element-nr">4</div>
 							<div class="pt-4">
 								<h4>Breakpoints</h4>
-								<p>Bootstrap uses predefined breakpoints (extra small, small, medium, large, and extra large) to control the responsive behaviour of columns. This allows for different column arrangements depending on the device's width.</p>
+								<p style="font-size: 0.875em;">Bootstrap uses predefined breakpoints (extra small, small, medium, large, and extra large) to control the responsive behaviour of columns. This allows for different column arrangements depending on the device's width.</p>
 							</div>
 						</div>
 					</div>
-
 				</div>
+
 			</div>
 
 			<div class="container-xxl overflow-hidden" id="container">
@@ -151,7 +149,7 @@
 								<p>The default .container class is a responsive, fixed-width container, meaning its max-width changes at each breakpoint.</p>
 							</div>
 							<div class="code-example font-monospace">
-								&lt;div class="container"&gt;max-width at each breakpoint &lt;/div&gt;
+								&lt;div class="container"&gt; max-width at each breakpoint &lt;/div&gt;
 							</div>
 						</div>
 
@@ -161,11 +159,11 @@
 								<p>Provides a responsive fixed width at various breakpoints. The width of the container changes based on the screen size but does not stretch to fill the entire width of the viewport.</p>
 							</div>
 							<div class="code-example font-monospace">
-								&lt;div class="container-sm"&gt;100% wide until small breakpoint&lt;/div&gt;<br>
-								&lt;div class="container-md"&gt;100% wide until medium breakpoint&lt;/div&gt;<br>
-								&lt;div class="container-lg"&gt;100% wide until large breakpoint&lt;/div&gt;<br>
-								&lt;div class="container-xl"&gt;100% wide until extra large breakpoint&lt;/div&gt;<br>
-								&lt;div class="container-xxl"&gt;100% wide until extra extra large breakpoint&lt;/div&gt;
+								&lt;div class="container-sm"&gt; 100% wide until small breakpoint &lt;/div&gt;<br>
+								&lt;div class="container-md"&gt; 100% wide until medium breakpoint &lt;/div&gt;<br>
+								&lt;div class="container-lg"&gt; 100% wide until large breakpoint &lt;/div&gt;<br>
+								&lt;div class="container-xl"&gt; 100% wide until extra large breakpoint &lt;/div&gt;<br>
+								&lt;div class="container-xxl"&gt; 100% wide until extra extra large breakpoint &lt;/div&gt;
 							</div>
 						</div>
 
@@ -175,7 +173,7 @@
 								<p>This container spans the entire width of the viewport, making it responsive to the screen size without any fixed width constraints.</p>
 							</div>
 							<div class="code-example font-monospace">
-								&lt;div class="container-fluid"&gt; ... &lt;/div&gt;
+								&lt;div class="container-fluid"&gt; 100% wide, no breakpoints &lt;/div&gt;
 							</div>
 						</div>
 					</div>
@@ -189,7 +187,7 @@
 
 			<div class="container-xxl mb-5 overflow-hidden" id="possibilities">
 				<div>
-					<h2 class="mb-2 hero-title">Endless possibilities</h2>
+					<h2 class="mb-3 hero-title">Endless possibilities</h2>
 					<p>This system enables developers to create organized, responsive web layouts that adjust seamlessly to different devices.</p>
 				</div>
 				<div class="row g-2">
@@ -197,7 +195,7 @@
 						<div class="row row-cols-2 g-2">
 							<div class="col"><img src="images/img2.jpg" class="img-fluid"></div>
 							<div class="col"><img src="images/img4.jpg" class="img-fluid"></div>
-							<div class="col"><img src="images/img3.jpg" class="img-fluid"></div>
+							<div class="col"><img src="images/img1.jpg" class="img-fluid"></div>
 							<div class="col"><img src="images/img6.jpg" class="img-fluid"></div>
 						</div>
 					</div>
@@ -207,7 +205,6 @@
 								<div><img src="images/img5.jpg" class="img-fluid object-fit-cover"></div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 
@@ -330,9 +327,9 @@
 				</div>
 
 			</div>
-			
-		</main>
 
+		</main>
+		
 		<footer class="p-5" style="border-top: 1px solid #ffffff50;">
 			<p class="m-0" style="text-align: center; font-style: italic;">Thats it. Thanks &#9825;</p>
 		</footer>
