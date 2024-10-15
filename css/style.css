@@ -34,7 +34,7 @@ h2 {
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
 	display: block;
-	width: 200px;
+	width: 12.5em;
 }
 
 .navbar-logo > span {
@@ -47,7 +47,7 @@ h2 {
 .navbar-logo::before {
 	content: "";
 	display: block;
-	padding-top: 33px;
+	padding-top: 1.75em;
 }
 
 .nav-item a {
@@ -70,8 +70,8 @@ h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 33px;
-	width: 33px;
+	height: 2.25em;
+	width: 2.25em;
 	background: #ffffff;
 	color: var(--bs-body-bg);
 }
@@ -80,7 +80,7 @@ h2 {
 	border: 1px solid #ffffff50;
 	padding: 2em;
 	border-radius: 5px;
-	font-size: 14px;
+	font-size: 0.875em;
 	font-family: var(--bs-font-monospace);
 }
 
