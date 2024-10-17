@@ -59,6 +59,7 @@ img {
 
 .nav-item a {
 	cursor: pointer;
+	text-align: right;
 }
 
 .nav-item:not(:last-of-type) {
@@ -79,14 +80,14 @@ img {
 	align-items: center;
 	height: 2.25em;
 	width: 2.25em;
-	background: #ffffff;
+	background: var(--bs-body-color);
 	color: var(--bs-body-bg);
 }
 
 .code-example {
-	border: 1px solid #ffffff50;
+	border: 1px solid var(--bs-body-color);
 	padding: 2em;
-	border-radius: 5px;
+	border-radius: 3px;
 	font-size: 0.875em;
 	font-family: var(--bs-font-monospace);
 }
@@ -135,8 +136,8 @@ img {
 }
 
 .example .col, .example .col-8, .example .col-4, .example .col-6 {
-	border: 1px solid #ffffff;
+	border: 1px solid var(--bs-body-color);
 	padding: 1em;
 	text-align: center;
-	border-radius: 5px;
+	border-radius: 3px;
 }

@@ -2,7 +2,6 @@
 
 // Base stuff
 $primary: #0B0A0C;
-$body-color: #ffffff;
 $font-family-base: 'Satoshi', sans-serif;
 $body-bg-dark: #0B0A0C;
 
@@ -10,11 +9,11 @@ $body-bg-dark: #0B0A0C;
 $nav-link-font-weight: 600;
 $nav-link-font-size: 0.875em;
 
-$navbar-toggler-padding-y: 0rem;
-$navbar-toggler-padding-x: 0rem;
-$navbar-toggler-border-radius: 0px;
-
-// grid stuff
+$navbar-toggler-padding-y: 0.25rem;
+$navbar-toggler-padding-x: 0.25rem;
+$navbar-toggler-border-radius: 5px;
+$navbar-light-toggler-border-color: rgba(0, 0, 0, 0);
+$navbar-toggler-focus-width: 0rem;
 
 // bootstrap import
 @import "../bootstrap/scss/bootstrap";
